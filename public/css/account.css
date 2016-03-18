@@ -1,0 +1,262 @@
+
+.account-header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    margin-top: -20px;
+    color: #fff;
+    background-image: url('../resources/images/account.jpg');
+}
+
+.account-header .account-header-content {
+    position: relative;
+    width: 100%;
+    padding: 80px 15px;
+    
+    text-align: center;
+}
+
+.account-header .account-header-content .account-header-content-inner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+}
+
+
+.user-wrapper .user-infos {
+    display: inline-block;
+    position: relative;
+    margin-top: -50px;
+    width: 500px;
+    height: 200px;
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 8px gray;
+    border-radius: 2px;
+}
+
+.user-wrapper .user-infos img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-left: -300px;
+    margin-top: 25px;
+    box-shadow: 0px 1px 5px gray;
+    position: relative;
+}
+
+.user-wrapper .user-infos .text-wrapper {
+    position: absolute;
+    margin-top: -124px;
+    margin-left: 210px;
+    width: 400px;
+    text-align: left;
+}
+
+.user-wrapper .user-infos h1 {
+    margin-left: 0px;
+    margin-top: 30px;
+    position: relative;
+    color: #484144;
+    font-family: 'Pacifico', cursive;
+} 
+
+
+
+.user-wrapper .user-infos button[type="button"] {
+    margin-right: 10px;
+    margin-left: -150px;
+    margin-bottom: 10px;
+    margin-top: 148px;
+    padding: 5px;
+    font-size: 120%;
+    
+    position: absolute;
+    
+}
+
+
+#account-content {
+    margin-bottom: 100px;
+    
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
+.account-navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #484144;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+
+.account-navbar .account-navbar-btn-wrapper { 
+    text-align: center;
+}
+
+
+.account-navbar .account-navbar-btn-wrapper ul li { 
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+
+.account-navbar .account-navbar-btn-wrapper ul li:first-child button { 
+    background-color: rgba(255,90,99,1);
+    border-color: rgba(255,90,99,1);
+    font-size: 100%;
+    font-weight: 500;
+    outline: none;
+    cursor: default;
+}
+
+.account-navbar .account-navbar-btn-wrapper ul li:first-child button:active { 
+    box-shadow: none;
+}
+
+.account-navbar .account-navbar-btn-wrapper li:first-child button .badge { 
+    margin-left: 5px;
+    border-color: rgba(255,90,99,1);
+    color: #484144;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+
+.account-navbar .account-navbar-btn-wrapper ul li a[href="#newliste"] {
+    
+    margin-top: 1px;
+    font-size: 100%;
+    font-weight: 500;
+    background-color: rgba(255,90,99,1);
+    border-color: rgba(255,90,99,1);
+    color: whitesmoke;
+}
+
+.account-navbar .account-navbar-btn-wrapper ul li a[href="#newliste"]:hover {
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: #484144;
+}
+
+
+div[ng-show="alerteServeur"] {
+    text-align: center;
+    border-radius: 0;
+}
+
+
+.account-data {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.account-data  ul {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.account-data  ul li{
+    text-align: center;
+    height: 150px;
+    list-style-type: none;
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.account-data  ul li .item {
+    text-align: center;
+    height: 100%;
+    background-color: whitesmoke;    
+}
+
+.account-data  ul li .item h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.account-data  ul li .item .page-header {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0px;
+    height: 70px;
+}
+
+.account-data  ul li .item .page-header h1 {
+    text-align: left;
+    margin-left: 10px;    
+}
+
+#item-date {
+    margin-top: -50px;
+    margin-right: 10px;
+    padding: 10px;
+    float: right;
+    font-size: 100%;
+}
+
+
+.account-data  ul li .item .description {
+    text-align: left;
+    padding-left: 10px;
+    width: 80%;
+    height: 40px;
+}
+
+.account-data  ul li .item .btn-warning {
+    float: right;
+    margin-top: -43px;
+    margin-right: 10px;
+}
+
+.account-data button[type="button"] {
+    margin-top: 80px;
+}
+
+
+#myModal .modal-dialog .modal-content .modal-body .edit-choice-wrapper {
+    text-align: center;
+}
+
+#myModal .modal-dialog .modal-content .modal-body .edit-choice-wrapper .btn-warning,.btn-danger  {
+    margin-top: 30px;
+}
+
+
+
+
+
