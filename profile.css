@@ -1,0 +1,10 @@
+
+#EditProfile-content .container .row  .EditProfile-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 500px;
+}
+
+#EditProfile-content .container .row  .EditProfile-wrapper form {
+    width: 500px;
+}

@@ -1,0 +1,107 @@
+<!-- editlist.html -->
+
+
+<header class="signin-header">
+    <div class="signin-header-content">
+        <div class="signin-header-content-inner">
+            <h1>Edit List</h1>
+        </div>
+    </div>
+</header>
+
+
+
+<div id="NewListe-content" ng-controller="editlistCtrl">
+    <div class="container">
+        <div class="row">
+            
+
+            <div class="content-wrapper">
+                <div class="add-elements">
+
+                    <div class="alert alert-danger" role="alert" ng-show="DisplayAddItemToListeAlert">
+                        <div class="newliste-alert" ng-show="displayFormatAlert">
+                             <b>All fields must be filled.</b>
+                             <br/>
+                             <br/><b>'Object name'</b>: 20 characters maximum.
+                             <br/><b>'Description'</b>: 120 characters maximum.
+                        </div>
+                        <div class="newliste-alert" ng-show="!displayFormatAlert">
+                             <b>Server Error.</b>
+                        </div>
+                    </div>
+                        
+                    
+                    <div class="page-header">
+                        <h1>Edit elements from list: <small>[[ nomListe ]]</small></h1>                        
+                    </div>
+
+                    
+                    <div>
+                        
+                        <addbutton></addbutton>
+                        <div id="new-row"></div>	
+                        
+                    </div>
+                    
+                    
+                </div>
+
+                <br/>
+
+                <div class="action-btn">
+                    
+                    <p>You have [[ numberOfElement ]] elements in this list.</p>
+                    <button type="button" class="btn btn-primary" ng-click="UpdateList()">
+                            <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" 
+                                ng-show="loading"></span> Update List</button>
+                    
+                    <div id='new'></div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

@@ -1,0 +1,48 @@
+
+ #sign .container .row .sign-wrapper {
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-bottom: 500px;
+ }
+
+ #sign .container .row .sign-wrapper form {
+     width: 500px;
+ }
+ 
+ #sign .container .row .sign-wrapper form .form-group .alert-danger {
+     margin-top: 5px;
+     padding-top: 7px;
+     padding-bottom: 7px;
+ }
+ 
+ #email-hint {
+     float: right;
+     margin-right: 5px;
+     margin-top: -26px;
+ }
+ 
+ #sign .container .row .sign-wrapper form .form-group .glyphicon.glyphicon-ok {
+     float: right;
+     margin-top: -26px;
+     margin-right: 8px;
+     color: limegreen;
+ }
+ 
+ .glyphicon-refresh-animate {
+     top: 3px;
+     left: -2px;
+     -animation: spin .7s infinite linear;
+     -webkit-animation: spin2 .7s infinite linear;
+ }
+
+ @-webkit-keyframes spin2 {
+     from { -webkit-transform: rotate(0deg);}
+     to { -webkit-transform: rotate(360deg);}
+ }
+
+ @keyframes spin {
+     from { transform: scale(1) rotate(0deg);}
+     to { transform: scale(1) rotate(360deg);}
+ }
+
+

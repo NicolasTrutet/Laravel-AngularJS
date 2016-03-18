@@ -1,0 +1,142 @@
+<!-- newlist.html -->
+
+
+<header class="signin-header">
+    <div class="signin-header-content">
+        <div class="signin-header-content-inner">
+            <h1>NEW LIST</h1>
+        </div>
+    </div>
+</header>
+
+
+
+<div id="NewListe-content" ng-controller="newlisteCtrl">
+    <div class="container">
+        <div class="row">
+            
+            
+            
+            <!-- CREATION LISTES FORMULAR -->
+            <div class="content-wrapper" ng-show="ShowCreateListe">
+                <div class="add-elements">
+
+                    <div class="alert alert-danger" role="alert" ng-show="DisplayNewListeAlert">
+                        <div class="newliste-alert">
+                             <b>All fields must be filled</b>
+                             <br/>
+                             <br/><b>'Object name'</b>: 20 characters maximum.
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="page-header">
+                      <h1>Create a new list</h1>
+                    </div>
+                    
+                    <form>
+                      <div class="form-group">
+                        <label>List name</label>
+                        <input type="text" class="form-control" 
+                               placeholder="list name" ng-model="InputNewListe.ListeNom">
+                      </div>
+                      <div class="form-group">
+                        <label>Description</label>
+                        <input type="text" class="form-control" 
+                               placeholder="description" ng-model="InputNewListe.ListeDescription">
+
+                      </div>
+                      <a class="btn btn-primary btn" role="button" ng-click="CreateListe()">Create list</a>
+                    </form>
+                
+                </div>
+            </div>
+            
+            
+            
+            
+            <!-- FORM ADD ELEMENT À LA LISTES -->
+            <div class="content-wrapper" ng-show="!ShowCreateListe">
+                <div class="add-elements">
+                    
+                    <div class="alert alert-danger" role="alert" ng-show="DisplayAddItemToListeAlert">
+                        <div class="newliste-alert" ng-show="displayFormatAlert">
+                             <b>All fields must be filled.</b>
+                             <br/>
+                             <br/><b>'Object Name'</b>: 20 characters maximum.
+                             <br/><b>'Description'</b>: 120 characters maximum.
+                        </div>
+                        <div class="newliste-alert" ng-show="!displayFormatAlert">
+                             <b>Server error.</b>
+                        </div>
+                    </div>
+                    
+                    <div class="page-header">
+                        <h1>Add element to the list <small>[[ InputNewListe.ListeNom ]]</small></h1>                        
+                    </div>
+                    
+                        
+                    <addbutton></addbutton>
+                    <div id="new-row"></div>			
+                </div>
+
+                <br/>
+
+                <div class="action-btn">
+                    <p>created elements: [[ numberOfElement ]]</p>
+                    <button type="button" class="btn btn-primary" ng-click="submitNewList()">
+                        <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" 
+                                ng-show="SpinnerCreateListe"></span> Create</button>
+                      
+                    
+                    <div id='new'></div>
+                </div>
+            </div>
+            
+            
+            
+            
+    
+    </div>
+</div>
+
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
