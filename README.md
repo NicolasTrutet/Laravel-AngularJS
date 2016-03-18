@@ -7,6 +7,7 @@ This project named WhishList is a RESTful web application built with Laravel 5.2
 You can login to the "Harry" account using:
 <br>
 Email: **harry@gmail.com**
+<br>
 Password: **secretharry**
 
 <a href="http://nicolastrutet.com/demos/whishlist/public/">Live demo</a>
