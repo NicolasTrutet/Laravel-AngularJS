@@ -1,0 +1,108 @@
+<!-- results.html -->
+
+
+<div ng-controller="ResultsCtrl">
+    <header class="result-header">
+       <div class="result-header-content">
+           <div class="result-header-content-inner">
+               <h2>Results for <span><h2>[[ username ]]</h2></span></h2>
+               <h3>[[ CountListes ]] <span><h3>Lists</h3></span></h3>
+           </div>
+       </div>
+    </header>
+
+
+
+
+
+
+
+    <div id="result"> 
+        <div class="container">
+            <div class="row">
+
+
+                <div class="result-wrapper">
+
+                    
+                   
+                    <!-- Loading Icon -->
+                    <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate fa-5x" ng-show="loading"></span>
+                    
+                    
+                    
+                    
+                    <!-- Resultats des listes -->
+                    <div ng-show="showResults">
+                        <table class="resultsListes" ng-repeat="liste in Results" ng-click="GetListElements(liste.id_liste)">
+                          <tr>
+                            <td><h2>[[ liste.nom_liste ]]</h2></td>
+                          </tr>
+                          <tr>
+                            <td><h5>[[ liste.nom_liste ]]</h5></td>
+                          </tr>
+                        </table>
+                    </div>
+
+
+                    
+
+
+                    <!-- Liste des elements d'une liste -->
+                    <div ng-show="!showResults">
+                        <div class="btn-group" role="group" style="margin-top:10px;">
+                          <button type="button" class="btn btn-info" ng-click="backToListes()">back to lists</button>
+                        </div>
+                        <table class="resultsElements" ng-repeat="item in ItemsResults">
+                          <tr>
+                            <td class="item-nom"><h4>[[ item.nom_item ]]</h4></td>
+                            <td class="item-description"><h4>[[ item.description_item ]]</h4></td>
+                            <td class="button-icon" ng-show="item.booked == false" ng-click="bookItem(item.id_item)"><i class="fa fa-gift fa-3x"></i></td>
+                            <td class="button-icon" ng-show="item.booked == true">
+                                <button type="button" class="btn btn-default" id="[[item.id_item]]" ng-click="popover(item.id_item)"
+                                      data-container="body" data-toggle="popover" data-placement="left" 
+                                      data-content="This object is already booked.">
+                                      <i class="fa fa-lock fa-3x"></i>
+                                </button>
+                            </td>
+                          </tr>
+                        </table>
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+
+
+                    <!-- MODAL -->    
+                    <div class="modal fade" tabindex="-1" role="dialog" id="ConnectionModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Connexion</h4>
+                          </div>
+                          <div class="modal-body">
+                              <div class="results-choice-wrapper">
+                                  <p><b>You must be logged in to make a reservation on an object.</b></p>
+                                <button type="button" class="btn btn-info" data-dismiss="modal" ng-click="login()">Sign In</button>
+                              </div>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>               
+        </div>    
+    </div>
+
+        
+        
+</div>

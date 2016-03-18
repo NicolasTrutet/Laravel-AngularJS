@@ -1,0 +1,67 @@
+<!-- login.html -->
+
+
+<header class="signin-header">
+   <div class="signin-header-content">
+       <div class="signin-header-content-inner">
+           <h1>Sign In</h1>
+       </div>
+   </div>
+</header>
+
+
+
+
+
+
+
+<div id="login" ng-controller="LoginCtrl"> 
+    <div class="container">
+        <div class="row">
+            
+            
+            <div class="login-wrapper">
+                
+                <div class="page-header">
+                  <h1>Sign In</h1>
+                </div>
+                
+                
+                <div class="alert alert-success" role="alert" ng-show="confirmAccount">Please confirm your account by clicking on the link in the email we have just sent you.</div>
+                
+                
+                <div class="alert alert-danger" role="alert" ng-show="LoginAlert.alert.show">[[ LoginAlert.alert.message ]]</div>
+                
+                <form>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" 
+                           placeholder="Email" ng-model="InputLogin.email">
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" 
+                           placeholder="Password" ng-model="InputLogin.password">
+
+                  </div>
+                  <a class="btn btn-primary btn" role="button" ng-click="login()">
+                      <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" 
+                            ng-show="LoginAlert.button.spinner"></span> Sign In</a>
+                </form>
+            
+            
+                <div class="login-signUp">
+                    <div class="jumbotron">
+                      <h2>Not a user yet !</h2>
+                      <p> At elit placerat ultricies ullamco ultricies, nulla aliquam, libero id augue tempus.</p>
+                      <p><a class="btn btn-primary btn-lg" href="#register" 
+                            role="button">Sign Up</a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>               
+    </div>    
+</div>
+
+   
