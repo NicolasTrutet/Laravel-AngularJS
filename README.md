@@ -9,7 +9,7 @@ You can login to the an account using:
 Email: **harry@gmail.com**
 <br>
 Password: **secretharry**
-{ "trailing_spaces_syntax_ignore": ["harry@gmail.com"]}
+
 <a href="http://nicolastrutet.com/demos/whishlist/public/">Live demo</a>
 
 
