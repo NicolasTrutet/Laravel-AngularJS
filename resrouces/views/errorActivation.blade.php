@@ -51,7 +51,7 @@
             
             <br/>
             
-            <a href="http://your_path/laravel/public">Go to whishlist.com</a>
+            <a href="http://your_path/public">Go to whishlist.com</a>
             
         </div>
     </div>
