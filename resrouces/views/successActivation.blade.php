@@ -50,7 +50,7 @@
 
             <br/>    
         
-            <a href="http://localhost/~nicolas/whish_prod/laravel/public/#/login/0">Sign In to your account.</a>
+            <a href="http://your_path/public/#/login/0">Sign In to your account.</a>
             
         </div>
     </div>
