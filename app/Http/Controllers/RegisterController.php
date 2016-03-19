@@ -86,7 +86,7 @@ Class RegisterController extends Controller
                     $user = array(
                         'email' => $request->input('email'),
                         'username' => $request->input('name'),
-                        'activation_link' => 'http://localhost/~nicolas/whish_prod/laravel/public/activate/' . $activationKey
+                        'activation_link' => 'http://your_path/public/activate/' . $activationKey
                     );
                     
                     
