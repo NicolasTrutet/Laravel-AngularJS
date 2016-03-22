@@ -9,4 +9,4 @@ This project named WhishList is a RESTful web application built with Laravel 5.2
 
 ## Author
 
-<a href="http://nicolastrutet.com/">TRUTET Nicolas</a>
+<a href="http://www.nicolastrutet.com/">TRUTET Nicolas</a>
